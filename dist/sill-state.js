@@ -1,0 +1,2 @@
+function n(n){var t=n,e=[];return{getState:function(){return t},setState:function(n,u){Object.assign(t,"function"==typeof n?n(t):n);for(var r=0,o=e;r<o.length;r+=1){(0,o[r])(t)}return u&&setTimeout(u,0),t},update:function(n){return e.push(n),function(){return e.slice(e.indexOf(n),1)}},connect:function(n){return function(e){return function(u){return e(Object.assign(u,n(t)))}}}}}module.exports=n;
+//# sourceMappingURL=sill-state.js.map
